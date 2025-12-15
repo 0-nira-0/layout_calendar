@@ -30,7 +30,7 @@
     transition: transform background-color 0.5s;
 
     @for $day from 1 through 31 {
-      &--#{$day}::before {
+      &:nth-child(#{$day}):before {
         content: "#{$day}";
         font-size: 30px;
         font-family: Arial, Helvetica, sans-serif;
